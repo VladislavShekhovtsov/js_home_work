@@ -30,12 +30,11 @@
 {   // String: credentials
 
     const surname = prompt('Введите вашу фамилию').trim();
-    const modSurname = surname[0].toUpperCase() + surname.slice(1).toLowerCase();
-
     const name = prompt('Введите ваше имя').trim();
-    const modName = name[0].toUpperCase() + name.slice(1).toLowerCase();
-
     const patronymic = prompt('Введите ваше отчество').trim();
+
+    const modSurname = surname[0].toUpperCase() + surname.slice(1).toLowerCase();
+    const modName = name[0].toUpperCase() + name.slice(1).toLowerCase();
     const modPatronymic = patronymic[0].toUpperCase() + patronymic.slice(1).toLowerCase();
 
     const fullName = `${modSurname} ${modName} ${modPatronymic}`;
